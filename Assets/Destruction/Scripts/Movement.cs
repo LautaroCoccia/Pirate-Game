@@ -10,22 +10,22 @@ public class Movement : MonoBehaviour, ICollidable
     [Header("-- Movement --")]
     [SerializeField] private float movementSpeed;
     [SerializeField] private float rotationSpeed;
-    [SerializeField] private float digCooldown;
-    [SerializeField] private float digCountdown;
-    [SerializeField] private float positionY;
-    [SerializeField] private Animator anim;
     [Space(10f)]
-    [Header("-- Push --")]
+    [Header("-- Dig --")]
     [Space(20f)]
     [Range(0.01f, 1f)]
-    [SerializeField] private float pushTime = 0.25f;
-    [SerializeField] private float frontForce = 1;
-    [SerializeField] private float upForce = 1;
-
+    [SerializeField] private float digCooldown;
+    [SerializeField] private float digCountdown;
+    [SerializeField] private bool canDig = false;
+    [SerializeField] private bool isDigging = false;
+    [Space(10f)]
+    [SerializeField] private Animator anim;
+    [SerializeField] private GameObject trigger;
+    private bool canJump = false;
+    
     private float hor;
     private float ver;
     private Vector3 movementDirection;
-    private bool canJump = false;
 
     private Rigidbody rb;
 
@@ -40,9 +40,7 @@ public class Movement : MonoBehaviour, ICollidable
     {
         PlayerMovement();
 
-        PlayerJumpLogic();
-        
-        PlayerPushLogic();
+        PlayerDigLogic();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -54,6 +52,8 @@ public class Movement : MonoBehaviour, ICollidable
 
     private void PlayerMovement()
     {
+        transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
+
         hor = Input.GetAxis("Horizontal");
         ver = Input.GetAxis("Vertical");
 
@@ -61,7 +61,11 @@ public class Movement : MonoBehaviour, ICollidable
         movementDirection.Normalize();
 
         anim.SetInteger("MovementVector", (int)movementDirection.magnitude);
-
+        if((int)movementDirection.magnitude > 0)
+        {
+            anim.SetBool("Dig", false);
+            digCountdown = 0;
+        }
         rb.velocity = new Vector3(hor * movementSpeed, rb.velocity.y, ver * movementSpeed);
 
         if (movementDirection != Vector3.zero)
@@ -71,32 +75,40 @@ public class Movement : MonoBehaviour, ICollidable
         }
     }
 
-    private void PlayerJumpLogic()
-    {
-        if (Input.GetKeyDown(KeyCode.X) && canJump)
-        {
-            
-        }
-
-        if (positionY > transform.position.y)
-        {
-            anim.SetTrigger("Fall");
-        }
-
-        positionY = transform.position.y;
-    }
-
-    private void PlayerPushLogic()
+    private void PlayerDigLogic()
     {
         if (digCountdown >= 0)
         {
             digCountdown -= Time.deltaTime;
         }
-        else if (Input.GetKeyDown(KeyCode.Z))
+        else if (digCountdown < 0 && isDigging)
         {
-            anim.SetTrigger("Push");
-            IsPushing?.Invoke(pushTime, frontForce, upForce);
-            digCountdown = digCooldown;
+            isDigging = false;
+            canDig = false;
+            anim.SetBool("Dig", false);
+            if(trigger!=null)
+            {
+                trigger.gameObject.SetActive(false);
+            }
         }
+        else if (Input.GetKeyDown(KeyCode.Space) )
+        {
+            if (digCountdown <= 0 && canDig)
+            {
+                isDigging = true;
+                anim.SetBool("Dig", true);
+                digCountdown = digCooldown;
+            }
+        }
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        trigger = other.gameObject;
+        canDig = true;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        canDig = false;
     }
 }
