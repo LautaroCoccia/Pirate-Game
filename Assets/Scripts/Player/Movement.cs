@@ -5,16 +5,19 @@ using System;
 public class Movement : MonoBehaviour, ICollidable
 {
     public static Action<float, float, float> IsPushing;
-    
+
+    [SerializeField] 
+    struct PlayerStats
+    {
+        public float currentDigSpeed;
+    }
     [Space(10f)]
     [Header("-- Movement --")]
     [SerializeField] private float movementSpeed;
     [SerializeField] private float rotationSpeed;
     [Space(10f)]
     [Header("-- Dig --")]
-    [Space(20f)]
-    [Range(0.01f, 1f)]
-    [SerializeField] private float digCooldown;
+    [SerializeField] private float digColddown;
     [SerializeField] private float digCountdown;
     [SerializeField] private bool canDig = false;
     [SerializeField] private bool isDigging = false;
@@ -28,11 +31,12 @@ public class Movement : MonoBehaviour, ICollidable
     private Vector3 movementDirection;
 
     private Rigidbody rb;
-
+    PlayerStats playerStats;
     // ----------------------
-
     void Awake()
     {
+        playerStats.currentDigSpeed = 1;
+
         rb = GetComponent<Rigidbody>();
     }
 
@@ -74,12 +78,15 @@ public class Movement : MonoBehaviour, ICollidable
             rb.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed);
         }
     }
-
+    public void SetDigSpeed(float newSpeed)
+    {
+        playerStats.currentDigSpeed = newSpeed;
+    }
     private void PlayerDigLogic()
     {
         if (digCountdown >= 0)
         {
-            digCountdown -= Time.deltaTime;
+            digCountdown -= Time.deltaTime * playerStats.currentDigSpeed;
         }
         else if (digCountdown < 0 && isDigging)
         {
@@ -97,11 +104,11 @@ public class Movement : MonoBehaviour, ICollidable
             {
                 isDigging = true;
                 anim.SetBool("Dig", true);
-                digCountdown = digCooldown;
+                digCountdown = digColddown;
             }
         }
-        
     }
+
     private void OnTriggerEnter(Collider other)
     {
         trigger = other.gameObject;

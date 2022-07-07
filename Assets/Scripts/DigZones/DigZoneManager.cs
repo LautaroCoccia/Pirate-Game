@@ -20,17 +20,40 @@ public class DigZoneManager : MonoBehaviour
 
     //[SerializeField] private List<GameObject> itemList;
 
-    struct DigZone
+    struct DigZoneStruct
     {
-        public Vector3 position;
+        public GameObject digZonePrefab;
         public bool isInUse;
     }
-    List<DigZone> positionsInUse = new List<DigZone>();
-    DigZone digZone;
+    List<DigZoneStruct> positionsInUse = new List<DigZoneStruct>();
+    DigZoneStruct digZone;
+    private void OnEnable()
+    {
+        DigZone.OnDestroyDigZone += UpdatePosInUse;
+    }
+    private void OnDisable()
+    {
+        DigZone.OnDestroyDigZone -= UpdatePosInUse;
+    }
+    void UpdatePosInUse(Vector3 position)
+    {
+        for(int i = 0; i < positionsInUse.Count; i++)
+        {
+            if (position == positionsInUse[i].digZonePrefab.transform.position)
+            {
+                digZone = positionsInUse[i];
+                digZone.isInUse = false;
+                digZone.digZonePrefab.SetActive(false);
+                positionsInUse[i] = digZone;
+                numPosInUse--;
+                break;
+            }
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        digZone = new DigZone();
+        digZone = new DigZoneStruct();
         horizontalAmount = horizontalAmount * 2;
         verticalAmount = verticalAmount * 2;
         if (horizontalAmount % 2 == 0) horizontalAmount++;
@@ -42,7 +65,8 @@ public class DigZoneManager : MonoBehaviour
                 //Instantiate(floorPrefab, new Vector3(x, 0, y), Quaternion.identity, transform);
                 if (x % 2 == 1 && y % 2 == 1)
                 {
-                    digZone.position = new Vector3(x, floorDistance, y);
+                    digZone.digZonePrefab = Instantiate(digZonePrefab, new Vector3(x, floorDistance, y), Quaternion.identity, transform);
+                    //digZone.digZonePrefab.SetActive(false);
                     digZone.isInUse = false;
                     positionsInUse.Add(digZone);
                     maxPositions++;
@@ -79,8 +103,8 @@ public class DigZoneManager : MonoBehaviour
                     {
                         digZone = positionsInUse[rnd];
                         digZone.isInUse = true;
+                        digZone.digZonePrefab.SetActive(true);
                         positionsInUse[rnd] = digZone;
-                        Instantiate(digZonePrefab, positionsInUse[rnd].position, Quaternion.identity, transform);
                         numPosInUse++;
                         hasSpawned = true;
                     }
