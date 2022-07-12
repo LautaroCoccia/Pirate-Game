@@ -5,8 +5,9 @@ using Random = UnityEngine.Random;
 using System;
 public class ChestSpawner : MonoBehaviour
 {
+    public static Action<int> AddScore;
     [SerializeField] List<Chest> chests;
-    [SerializeField] List<Item> items;
+    //[SerializeField] List<Item> items;
     
     public void SpawnChest()
     {
@@ -16,7 +17,8 @@ public class ChestSpawner : MonoBehaviour
         {
             if (rnd >= aux && rnd < aux + chests[i].spawnRate)
             {
-                items[0].ActivateEffect();
+                AddScore?.Invoke(chests[i].score);
+                //items[0].ActivateEffect();
                 break;
             }
             else

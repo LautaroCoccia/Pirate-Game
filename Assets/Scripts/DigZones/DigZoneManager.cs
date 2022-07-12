@@ -71,7 +71,6 @@ public class DigZoneManager : MonoBehaviour
                     positionsInUse.Add(digZone);
                     maxPositions++;
                     //positionsInUse.Add(new Vector3(x, floorDistance, y),);
-
                 }
                 //Instantiate(digZonePrefab, new Vector3(x, floorDistance, y), Quaternion.identity, transform);
                 //

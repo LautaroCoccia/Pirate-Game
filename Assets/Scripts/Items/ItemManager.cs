@@ -20,7 +20,6 @@ public class ItemManager : MonoBehaviour
     {
         Shovel.StartEffect -= shovelEffect;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -30,7 +29,7 @@ public class ItemManager : MonoBehaviour
             player.SetDigSpeed(sholvelSpeedMult);
         }
         else 
-            player.SetDigSpeed(1);
+            player.SetDigSpeed(0.5f);
     }
     void shovelEffect(float dur, float speedMul)
     {
