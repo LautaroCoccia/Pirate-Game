@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [Space(10f)]
     [Header("-- Movement --")]
     [SerializeField] private float movementSpeed;
+    [SerializeField] private float moveSpeedMultiplier = 1;
     [SerializeField] private float rotationSpeed;
     private float hor;
     private float ver;
@@ -18,7 +19,8 @@ public class PlayerController : MonoBehaviour
 
     [Space(10f)]
     [Header("-- Dig --")]
-    [SerializeField] private float digSpeed = 1;
+    [SerializeField] private float animatorNormalSpeed = 1;
+    [SerializeField] private float animatorDigSpeed = 1;
 
     [SerializeField] private float digColdown;
     [SerializeField] private float digCountdown;
@@ -47,11 +49,11 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.velocity = new Vector3(hor * movementSpeed, rb.velocity.y, ver * movementSpeed);
+        rb.velocity = new Vector3(movementDirection.x, rb.velocity.y, movementDirection.z);
     }
     private void Movement()
     {
-        // movement logic
+        //movement logic
         //transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         hor = Input.GetAxis("Horizontal");
@@ -59,9 +61,8 @@ public class PlayerController : MonoBehaviour
 
         movementDirection = new Vector3(hor, 0, ver);
         movementDirection.Normalize();
-
         anim.SetActiveMovementAnim((int)movementDirection.magnitude);
-
+        movementDirection = movementDirection * movementSpeed * moveSpeedMultiplier;
         // rotation logic
         if (movementDirection != Vector3.zero)
         {
@@ -72,27 +73,27 @@ public class PlayerController : MonoBehaviour
 
     private void DigMechanic()
     {   
-        if(digCountdown >0 && !isDigging)
+        if(digCountdown > 0 && !isDigging)
         {
-            digCountdown -= Time.deltaTime;
+            digCountdown -= Time.deltaTime * animatorDigSpeed;
         }
         if(Input.GetKeyDown(KeyCode.Space))
         {
             if(digCountdown <= 0 && canDig)
             {
                 isDigging = true;
-                anim.SetActiveDigAnimation(isDigging, digSpeed);
+                anim.SetActiveDigAnimation(isDigging, animatorDigSpeed);
                 digCountdown = digColdown;
                 digCurrentTime = digDuration;
             }
         }
         if(isDigging)
         {
-            digCurrentTime -= Time.deltaTime * digSpeed;
+            digCurrentTime -= Time.deltaTime * animatorDigSpeed;
             if (digCurrentTime <= 0)
             {
                 isDigging = false;
-                anim.SetActiveDigAnimation(isDigging, digSpeed);
+                anim.SetActiveDigAnimation(isDigging, animatorDigSpeed);
                 Debug.Log("Finish Dig");
             }
         }
@@ -103,7 +104,7 @@ public class PlayerController : MonoBehaviour
         if(isDigging && movementDirection != Vector3.zero)
         {
             isDigging = false;
-            anim.SetActiveDigAnimation(isDigging, digSpeed);
+            anim.SetActiveDigAnimation(isDigging, animatorNormalSpeed);
             digCountdown = 0;
             digCurrentTime = digDuration;
         }
@@ -120,8 +121,13 @@ public class PlayerController : MonoBehaviour
         canDig = false;
     }
 
-    void OnDigSpeedChange()
+    public void SetDigSpeed(float newSpeed)
     {
-        
+        animatorDigSpeed = newSpeed;
+    }
+
+    public void SetMovementSpeed(float newSpeed)
+    {
+        moveSpeedMultiplier = newSpeed;
     }
 }

@@ -27,15 +27,13 @@ public class PlayerAnimController : MonoBehaviour
     public void SetActiveDigAnimation(bool isDigging, float digSpeed)
     {
         anim.SetBool("Dig", isDigging);
-        if(!isDigging)
+        anim.speed = anim.speed * digSpeed;
+        if (!isDigging)
         {
+            anim.speed = 1;
             characterMedium.localPosition = new Vector3( initialPos.x, -0.5f, initialPos.z);
             characterMedium.localRotation = Quaternion.identity;
-
+            
         }
-    }
-    public void ResetTransform()
-    {
-        
     }
 }
