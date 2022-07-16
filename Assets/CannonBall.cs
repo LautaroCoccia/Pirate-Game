@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class CannonBall : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    public Action OnHitPlayer;
+    [SerializeField] int playerLayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,9 +13,9 @@ public class CannonBall : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.layer == player.layer)
+        if(collision.gameObject.layer == playerLayer)
         {
-            Time.timeScale = 0;
+            OnHitPlayer?.Invoke();
         }
         Destroy(gameObject);
     }

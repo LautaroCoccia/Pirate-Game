@@ -7,8 +7,15 @@ public class ItemsManager : MonoBehaviour
     [SerializeField] PlayerController playerController;
     [SerializeField] float shovelCurrentTime;
     [SerializeField] float parrotCurrentTime;
-    
 
+    private void OnEnable()
+    {
+        
+    }
+    private void OnDisable()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +35,10 @@ public class ItemsManager : MonoBehaviour
             ActivateParrot(15, 2);
         }
     }
-
+    public void ActivateShield(bool isActive)
+    {
+        playerController.SetActiveShield(isActive);
+    }
     public void ActivateShovel(float time, float multiplier)
     {
         shovelCurrentTime = time;

@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     //enum PlayerStates { Idle, Moving, Digging };
     //PlayerStates currentState;
+    public Action OnDie;
     private Rigidbody rb;
     [Space(10f)]
     [Header("-- Movement --")]
@@ -32,6 +33,9 @@ public class PlayerController : MonoBehaviour
     [Space(10f)]
     [Header("-- Animator --")]
     [SerializeField] private PlayerAnimController anim;
+
+    bool isShieldActive = false;
+    [SerializeField] GameObject shieldObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -129,5 +133,15 @@ public class PlayerController : MonoBehaviour
     public void SetMovementSpeed(float newSpeed)
     {
         moveSpeedMultiplier = newSpeed;
+    }
+    public void SetActiveShield(bool isActive)
+    {
+        if (!isActive && !isShieldActive)
+            OnDie?.Invoke();
+        else
+        {
+            isShieldActive = isActive;
+            shieldObject.SetActive(isShieldActive);
+        }
     }
 }
