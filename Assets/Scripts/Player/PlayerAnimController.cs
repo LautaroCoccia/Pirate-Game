@@ -29,7 +29,7 @@ public class PlayerAnimController : MonoBehaviour
         anim.SetBool("Dig", isDigging);
         if(!isDigging)
         {
-            characterMedium.localPosition = initialPos;
+            characterMedium.localPosition = new Vector3( initialPos.x, -0.5f, initialPos.z);
             characterMedium.localRotation = Quaternion.identity;
 
         }
