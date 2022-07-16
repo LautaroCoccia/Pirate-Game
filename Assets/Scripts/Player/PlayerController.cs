@@ -29,11 +29,12 @@ public class PlayerController : MonoBehaviour
 
     [Space(10f)]
     [Header("-- Animator --")]
-    [SerializeField] private Animator anim;
+    [SerializeField] private PlayerAnimController anim;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<PlayerAnimController>();
         //currentState = PlayerStates.Idle;
     }
 
@@ -59,6 +60,8 @@ public class PlayerController : MonoBehaviour
         movementDirection = new Vector3(hor, 0, ver);
         movementDirection.Normalize();
 
+        anim.SetActiveMovementAnim((int)movementDirection.magnitude);
+
         // rotation logic
         if (movementDirection != Vector3.zero)
         {
@@ -78,6 +81,7 @@ public class PlayerController : MonoBehaviour
             if(digCountdown <= 0 && canDig)
             {
                 isDigging = true;
+                anim.SetActiveDigAnimation(isDigging, digSpeed);
                 digCountdown = digColdown;
                 digCurrentTime = digDuration;
             }
@@ -88,6 +92,7 @@ public class PlayerController : MonoBehaviour
             if (digCurrentTime <= 0)
             {
                 isDigging = false;
+                anim.SetActiveDigAnimation(isDigging, digSpeed);
                 Debug.Log("Finish Dig");
             }
         }
@@ -98,6 +103,7 @@ public class PlayerController : MonoBehaviour
         if(isDigging && movementDirection != Vector3.zero)
         {
             isDigging = false;
+            anim.SetActiveDigAnimation(isDigging, digSpeed);
             digCountdown = 0;
             digCurrentTime = digDuration;
         }
@@ -112,5 +118,10 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         canDig = false;
+    }
+
+    void OnDigSpeedChange()
+    {
+        
     }
 }
