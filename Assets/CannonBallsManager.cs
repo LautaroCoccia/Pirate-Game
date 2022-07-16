@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CannonBallsManager : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class CannonBallsManager : MonoBehaviour
         {
             currentTime = timeToSpawn;
             GameObject obj = Instantiate(prefab);
+            obj.transform.position = new Vector3(Random.Range(0, 10), 20, Random.Range(0, 10));
         }
     }
 }

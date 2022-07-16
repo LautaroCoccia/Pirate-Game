@@ -95,7 +95,7 @@ public class Movement : MonoBehaviour, ICollidable
             anim.SetBool("Dig", false);
             if(trigger!=null)
             {
-                trigger.gameObject.SetActive(false);
+                //trigger.gameObject.SetActive(false);
             }
         }
         else if (Input.GetKeyDown(KeyCode.Space) )
