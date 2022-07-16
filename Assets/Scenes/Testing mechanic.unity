@@ -219,6 +219,10 @@ PrefabInstance:
       value: Digzone
       objectReference: {fileID: 0}
     - target: {fileID: 1152105328420473003, guid: baf5f4a70603d024896da313507255da, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152105328420473003, guid: baf5f4a70603d024896da313507255da, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -560,8 +564,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   rotationSpeed: 10
-  digColddown: 2
+  digSpeed: 1
+  digColdown: 2
   digCountdown: 0
+  digDuration: 1
+  digCurrentTime: 0
+  canDig: 0
+  isDigging: 0
   anim: {fileID: 0}
 --- !u!95 &3546054868151518676
 Animator:
