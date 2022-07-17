@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 public class CannonBall : MonoBehaviour
 {
-    public Action OnHitPlayer;
+    public static Action OnHitPlayer;
     [SerializeField] int playerLayer;
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,10 @@ public class CannonBall : MonoBehaviour
     {
         if(collision.gameObject.layer == playerLayer)
         {
+            Debug.Log("FUCK");
             OnHitPlayer?.Invoke();
         }
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
     // Update is called once per frame
     void Update()

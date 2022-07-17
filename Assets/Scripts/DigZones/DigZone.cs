@@ -19,6 +19,7 @@ public class DigZone : MonoBehaviour
     }
     private void OnDisable()
     {
+        Debug.Log("chota");
         if(Time.deltaTime != 0)
             spawner.SpawnChest();
         OnDestroyDigZone?.Invoke(transform.position);

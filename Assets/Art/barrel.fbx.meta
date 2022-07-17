@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 81e91e15b8a96e54c915ee8eb9526cf0
+guid: 5a4f1e289f7698b409dd1db97a86fbbf
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -7,16 +7,26 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: iron
-    second: {fileID: 2100000, guid: 2b2beb5672097d242ae878ff5766ee87, type: 2}
+      name: metal
+    second: {fileID: 2100000, guid: 97382eea007a438489714e9bf5cf2401, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: sand
-    second: {fileID: 2100000, guid: 95790cbe83a62584aafe4d3da471fde7, type: 2}
+      name: rock
+    second: {fileID: 2100000, guid: 03055f42ce4526e4bac4787a3d0de177, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: a15b013c9c02a6a4fbce231f649e07aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodDark
+    second: {fileID: 2100000, guid: 9c4f90031eff8bb4db0921a21e172d88, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
+    materialName: 1
     materialSearch: 1
     materialLocation: 1
   animations:

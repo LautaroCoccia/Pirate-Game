@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     //enum PlayerStates { Idle, Moving, Digging };
     //PlayerStates currentState;
-    public Action OnDie;
+    public static Action SpawnChest;
+    public static Action OnDie;
     private Rigidbody rb;
     [Space(10f)]
     [Header("-- Movement --")]
@@ -34,7 +35,7 @@ public class PlayerController : MonoBehaviour
     [Header("-- Animator --")]
     [SerializeField] private PlayerAnimController anim;
 
-    bool isShieldActive = false;
+    bool isShieldActive = true;
     [SerializeField] GameObject shieldObject;
     // Start is called before the first frame update
     void Start()
@@ -98,7 +99,7 @@ public class PlayerController : MonoBehaviour
             {
                 isDigging = false;
                 anim.SetActiveDigAnimation(isDigging, animatorDigSpeed);
-                Debug.Log("Finish Dig");
+                SpawnChest?.Invoke();
             }
         }
     }
@@ -137,7 +138,10 @@ public class PlayerController : MonoBehaviour
     public void SetActiveShield(bool isActive)
     {
         if (!isActive && !isShieldActive)
+        {
             OnDie?.Invoke();
+            Debug.Log("DIe");
+        }
         else
         {
             isShieldActive = isActive;

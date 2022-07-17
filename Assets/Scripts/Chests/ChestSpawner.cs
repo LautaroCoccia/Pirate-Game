@@ -6,23 +6,39 @@ using System;
 public class ChestSpawner : MonoBehaviour
 {
     public static Action<int> AddScore;
+    [SerializeField] List<GameObject> items;
     [SerializeField] List<Chest> chests;
-    //[SerializeField] List<Item> items;
-    
+
+    private void OnEnable()
+    {
+        PlayerController.SpawnChest += SpawnChest;
+    }
+    private void OnDisable()
+    {
+        PlayerController.SpawnChest -= SpawnChest;
+        
+    }
+    private void Update()
+    {
+    }
     public void SpawnChest()
     {
         int rnd = Random.Range(0, 100);
-        int aux = 0; 
+        int aux = 0;
+
+        int aux2 =  Random.Range(0, items.Count);
         for (int i = 0; i < chests.Count; i++)
         {
             if (rnd >= aux && rnd < aux + chests[i].spawnRate)
             {
                 AddScore?.Invoke(chests[i].score);
-                //items[0].ActivateEffect();
+                items[aux2].GetComponent<IPowerUp>().OnActive();
+                
                 break;
             }
             else
                 aux += chests[i].spawnRate;
         }
+        gameObject.SetActive(false);
     }
 }
