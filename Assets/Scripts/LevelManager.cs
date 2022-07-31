@@ -1,32 +1,98 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] float score;
-    [SerializeField] float multiplier = 1;
-    private void OnEnable()
+    [SerializeField] int lives = 3;
+    [SerializeField] int score = 0;
+    [SerializeField] int enemiesLeft = 0;
+
+    [SerializeField] private TextMeshProUGUI UIScore;
+    [SerializeField] private TextMeshProUGUI UIHealth;
+    [SerializeField] private TextMeshProUGUI UIEnemies;
+    [SerializeField] private TextMeshProUGUI UIExtras;
+    [SerializeField] private GameObject PauseMenuUI;
+    [SerializeField] private GameObject QuitMenuUI;
+    [SerializeField] private GameObject GameOverMenuUI;
+
+    private static bool pause = false;
+    private static LevelManager _instanceLevelManager;
+    private const int minLives = 1;
+    public static LevelManager Get()
     {
-        ChestSpawner.AddScore += OnScoreChange;
-        ItemsManager.setScoreMultiplier += OnMultiplierChange;
+        return _instanceLevelManager;
     }
-    private void OnDisable()
+    private void Awake()
     {
-        ItemsManager.setScoreMultiplier -= OnMultiplierChange;
-        ChestSpawner.AddScore -= OnScoreChange;
+        if (_instanceLevelManager == null)
+        {
+            _instanceLevelManager = this;
+        }
+        else if (_instanceLevelManager != this)
+        {
+            Destroy(gameObject);
+        }
     }
-    void OnScoreChange(int value)
+    private void Start()
     {
-        score += (value * multiplier);
+        UIHealth.text = ("Lives: " + lives);
+        UIEnemies.text = ("Left: " + enemiesLeft);
     }
-    void OnMultiplierChange(float newValue)
+    private void Update()
     {
-        multiplier = newValue;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SetPause();
+        }
     }
-    // Update is called once per frame
-    void Update()
+    public void StartEnemies()
     {
-        
+        enemiesLeft++;
+    }
+    public void UpdateEnemies()
+    {
+        enemiesLeft--;
+        UIEnemies.text = ("Left: " + enemiesLeft);
+    }
+    public void UpdateScore(int SCORE)
+    {
+        score += SCORE;
+        UIScore.text = ("Score: " + score);
+    }
+    public void UpdateHealth()
+    {
+        lives--;
+        if(lives< minLives)
+        {
+            GameOver();
+        }
+        UIHealth.text = ("Lives: " + lives);
+    }
+    private void SetTimeScale(int scale)
+    {
+        Time.timeScale = scale;
+    }
+    private void GameOver()
+    {
+        SetTimeScale(0);
+        GameOverMenuUI.SetActive(true);
+    }
+    public void SetPause()
+    {
+        pause = !pause;
+        if (pause)
+        {
+            SetTimeScale(0);
+            PauseMenuUI.SetActive(pause);
+        }
+        else
+        {
+            SetTimeScale(1);
+            PauseMenuUI.SetActive(pause);
+            QuitMenuUI.SetActive(pause);
+        }
     }
 }
