@@ -2,6 +2,6 @@ using UnityEngine;
 
 public interface ICollidable
 {
-    //void Collidable();
+    public void Collidable();
 
 }

@@ -29,11 +29,11 @@ public class DigZoneManager : MonoBehaviour
     DigZoneStruct digZone;
     private void OnEnable()
     {
-        DigZone.OnDestroyDigZone += UpdatePosInUse;
+        ChestSpawner.OnDestroyDigZone += UpdatePosInUse;
     }
     private void OnDisable()
     {
-        DigZone.OnDestroyDigZone -= UpdatePosInUse;
+        ChestSpawner.OnDestroyDigZone -= UpdatePosInUse;
     }
     void UpdatePosInUse(Vector3 position)
     {
@@ -65,7 +65,7 @@ public class DigZoneManager : MonoBehaviour
                 //Instantiate(floorPrefab, new Vector3(x, 0, y), Quaternion.identity, transform);
                 if (x % 2 == 1 && y % 2 == 1)
                 {
-                    digZone.digZonePrefab = Instantiate(digZonePrefab, new Vector3(x, floorDistance, y), Quaternion.identity, transform);
+                    digZone.digZonePrefab = Instantiate(digZonePrefab, new Vector3(x, 0, y), Quaternion.identity, transform);
                     //digZone.digZonePrefab.SetActive(false);
                     digZone.isInUse = false;
                     positionsInUse.Add(digZone);
@@ -88,7 +88,6 @@ public class DigZoneManager : MonoBehaviour
             if(currentTime > 0)
             {
                 currentTime -= Time.deltaTime;
-
             }
             else
             {
@@ -113,5 +112,9 @@ public class DigZoneManager : MonoBehaviour
             }
 
         }      
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        
     }
 }

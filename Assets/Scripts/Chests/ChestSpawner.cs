@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using System;
-public class ChestSpawner : MonoBehaviour
+public class ChestSpawner : MonoBehaviour,ICollidable
 {
+    public static event Action<Vector3> OnDestroyDigZone;
     public static Action<int> AddScore;
     [SerializeField] List<GameObject> items;
     [SerializeField] List<Chest> chests;
 
     private void OnEnable()
     {
-        PlayerController.SpawnChest += SpawnChest;
+        //PlayerController.SpawnChest += SpawnChest;
     }
     private void OnDisable()
     {
-        PlayerController.SpawnChest -= SpawnChest;
-        
+        //PlayerController.SpawnChest -= SpawnChest;
     }
     private void Update()
     {
@@ -39,6 +39,11 @@ public class ChestSpawner : MonoBehaviour
             else
                 aux += chests[i].spawnRate;
         }
-        gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
+    }
+    public void Collidable()
+    {
+        SpawnChest();
+        OnDestroyDigZone?.Invoke(transform.position);
     }
 }

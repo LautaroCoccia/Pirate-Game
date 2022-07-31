@@ -4,7 +4,6 @@ using UnityEngine;
 using System;
 public class DigZone : MonoBehaviour
 {
-    public static event Action<Vector3> OnDestroyDigZone;
     [SerializeField] ChestSpawner spawner;
     // Start is called before the first frame update
     void Start()
@@ -19,10 +18,7 @@ public class DigZone : MonoBehaviour
     }
     private void OnDisable()
     {
-        Debug.Log("chota");
-        if(Time.deltaTime != 0)
-            spawner.SpawnChest();
-        OnDestroyDigZone?.Invoke(transform.position);
+        
     }
-    
+   
 }

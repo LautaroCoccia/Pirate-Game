@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using System;
 
-public class Movement : MonoBehaviour, ICollidable
+public class Movement : MonoBehaviour
 {
     public static Action<float, float, float> IsPushing;
 

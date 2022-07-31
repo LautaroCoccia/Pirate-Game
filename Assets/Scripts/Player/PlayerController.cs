@@ -7,9 +7,10 @@ public class PlayerController : MonoBehaviour
 {
     //enum PlayerStates { Idle, Moving, Digging };
     //PlayerStates currentState;
-    public static Action SpawnChest;
+    //public static Action SpawnChest;
     public static Action OnDie;
     private Rigidbody rb;
+    GameObject currentHole;
     [Space(10f)]
     [Header("-- Movement --")]
     [SerializeField] private float movementSpeed;
@@ -99,7 +100,8 @@ public class PlayerController : MonoBehaviour
             {
                 isDigging = false;
                 anim.SetActiveDigAnimation(isDigging, animatorDigSpeed);
-                SpawnChest?.Invoke();
+                if (currentHole != null)
+                    currentHole.GetComponent<ICollidable>().Collidable();
             }
         }
     }
@@ -118,11 +120,13 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.layer == 6)
         {
+            currentHole = other.gameObject;
             canDig = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
+        currentHole = null;
         canDig = false;
     }
 
