@@ -67,7 +67,7 @@ public class ItemsManager : MonoBehaviour
     }
     public void ActivateShield(bool isActive)
     {
-        //playerController.SetActiveShield(isActive);
+        playerController.SetActiveShield(isActive);
     }
     public void ActiveMultiplier(float time, float newMultiplier)
     {

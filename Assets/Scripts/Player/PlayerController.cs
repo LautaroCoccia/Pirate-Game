@@ -5,12 +5,11 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-    //enum PlayerStates { Idle, Moving, Digging };
-    //PlayerStates currentState;
-    //public static Action SpawnChest;
+    
     public static Action OnDie;
     private Rigidbody rb;
     GameObject currentHole;
+    [SerializeField] private bool isAlive = true;
     [Space(10f)]
     [Header("-- Movement --")]
     [SerializeField] private float movementSpeed;
@@ -59,8 +58,6 @@ public class PlayerController : MonoBehaviour
     }
     private void Movement()
     {
-        //movement logic
-        //transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         hor = Input.GetAxis("Horizontal");
         ver = Input.GetAxis("Vertical");
@@ -99,6 +96,7 @@ public class PlayerController : MonoBehaviour
             if (digCurrentTime <= 0)
             {
                 isDigging = false;
+                canDig = false;
                 anim.SetActiveDigAnimation(isDigging, animatorDigSpeed);
                 if (currentHole != null)
                     currentHole.GetComponent<ICollidable>().Collidable();
@@ -143,8 +141,9 @@ public class PlayerController : MonoBehaviour
     {
         if (!isActive && !isShieldActive)
         {
-            OnDie?.Invoke();
+            isAlive = false;
             Debug.Log("DIe");
+            OnDie?.Invoke();
         }
         else
         {
