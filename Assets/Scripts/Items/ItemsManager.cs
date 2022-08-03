@@ -85,6 +85,7 @@ public class ItemsManager : MonoBehaviour
     }
     void OnPlayerGetHit()
     {
+        Debug.Log("Hit");
         UImanager.SetActiveUIpatch(false);
         ActivateShield(false);
     }

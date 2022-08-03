@@ -147,6 +147,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            Debug.Log("Alive");
             isShieldActive = isActive;
             shieldObject.SetActive(isShieldActive);
         }
