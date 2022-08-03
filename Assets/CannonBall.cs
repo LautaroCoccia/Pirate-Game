@@ -18,7 +18,7 @@ public class CannonBall : MonoBehaviour
             Debug.Log("FUCK");
             OnHitPlayer?.Invoke();
         }
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
     // Update is called once per frame
     void Update()

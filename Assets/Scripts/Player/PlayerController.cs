@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     [Header("-- Animator --")]
     [SerializeField] private PlayerAnimController anim;
 
-    bool isShieldActive = true;
+    bool isShieldActive = false;
     [SerializeField] GameObject shieldObject;
     // Start is called before the first frame update
     void Start()
