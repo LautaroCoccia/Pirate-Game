@@ -12,13 +12,15 @@ GameObject:
   - component: {fileID: 1152105328420473004}
   - component: {fileID: 1152105328420473005}
   - component: {fileID: 1152105328420473002}
+  - component: {fileID: 8568765871033267170}
+  - component: {fileID: 2073839583409041075}
   m_Layer: 0
   m_Name: Digzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1152105328420473007
 Transform:
   m_ObjectHideFlags: 0
@@ -97,3 +99,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8568765871033267170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152105328420473003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a486c51c53ff344da8bdc1c0f8b8285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 2073839583409041075}
+--- !u!114 &2073839583409041075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152105328420473003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ac8f42ddc13894a9f04d359f538777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chests:
+  - {fileID: 11400000, guid: f87adaf6b656de447ad1124b8fc83f9a, type: 2}
+  - {fileID: 11400000, guid: d2b8e3080cf8e10499d075281c6d2421, type: 2}
+  - {fileID: 11400000, guid: c25984e72faf3e34da7b0e2f91d3e537, type: 2}
+  - {fileID: 11400000, guid: 990746d30a655914e81c2b18a46fca17, type: 2}
+  - {fileID: 11400000, guid: 5b063cbdb30d7c446b38f2fa8e9a2476, type: 2}
+  items:
+  - {fileID: 0}
