@@ -7,6 +7,6 @@ public class Shield : MonoBehaviour, IPowerUp
     public static Action<bool> Active;
     public void OnActive()
     {
-        //Active?.Invoke(true);
+        Active?.Invoke(true);
     }
 }

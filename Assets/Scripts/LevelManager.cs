@@ -6,21 +6,18 @@ using System.Collections.Generic;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] int lives = 3;
     [SerializeField] int score = 0;
-    [SerializeField] int enemiesLeft = 0;
+    [SerializeField] float survivedTime = 0;
 
     [SerializeField] private TextMeshProUGUI UIScore;
-    [SerializeField] private TextMeshProUGUI UIHealth;
-    [SerializeField] private TextMeshProUGUI UIEnemies;
     [SerializeField] private TextMeshProUGUI UIExtras;
-    [SerializeField] private GameObject PauseMenuUI;
-    [SerializeField] private GameObject QuitMenuUI;
-    [SerializeField] private GameObject GameOverMenuUI;
+    [SerializeField] private UIManager UImanager;
 
     private static bool pause = false;
+    
+    private static bool playerAlive = true;
+
     private static LevelManager _instanceLevelManager;
-    private const int minLives = 1;
     public static LevelManager Get()
     {
         return _instanceLevelManager;
@@ -35,41 +32,38 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        SetPlay();
     }
-    private void Start()
+    private void OnEnable()
     {
-        UIHealth.text = ("Lives: " + lives);
-        UIEnemies.text = ("Left: " + enemiesLeft);
+        PlayerController.OnDie += GameOver;
+        ChestSpawner.AddScore += UpdateScore;
+    }
+    private void OnDisable()
+    {
+        ChestSpawner.AddScore -= UpdateScore;
+        PlayerController.OnDie -= GameOver;
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Time.timeScale != 0)
+        {
+            survivedTime += Time.deltaTime;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) )
         {
             SetPause();
         }
     }
-    public void StartEnemies()
+    public void SetPlay()
     {
-        enemiesLeft++;
-    }
-    public void UpdateEnemies()
-    {
-        enemiesLeft--;
-        UIEnemies.text = ("Left: " + enemiesLeft);
+        Time.timeScale = 1;
     }
     public void UpdateScore(int SCORE)
     {
         score += SCORE;
-        UIScore.text = ("Score: " + score);
-    }
-    public void UpdateHealth()
-    {
-        lives--;
-        if(lives< minLives)
-        {
-            GameOver();
-        }
-        UIHealth.text = ("Lives: " + lives);
+        if (UIScore != null)
+            UIScore.text = ("Score: " + score);
     }
     private void SetTimeScale(int scale)
     {
@@ -78,21 +72,43 @@ public class LevelManager : MonoBehaviour
     private void GameOver()
     {
         SetTimeScale(0);
-        GameOverMenuUI.SetActive(true);
+        UIExtras.text = ("Score: " + score + "\n" +
+                         "Time survived: " + survivedTime);
+        //GameOverMenuUI.SetActive(true);
+        UImanager.SetActiveGameOverMenuUI(true);
     }
     public void SetPause()
     {
-        pause = !pause;
-        if (pause)
+        if(playerAlive)
         {
-            SetTimeScale(0);
-            PauseMenuUI.SetActive(pause);
+            if(!UImanager.GetActivePauseMenuUI() && !pause)
+            {
+                pause = true;
+                //PauseMenuUI.SetActive(true);
+                UImanager.SetActivePauseMenuUI(true);
+                SetTimeScale(0);
+            }
+            else if(UImanager.GetActiveQuitMenuUI())
+            {
+                //QuitMenuUI.SetActive(false);
+                UImanager.SetActiveQuitMenuUI(false);
+                UImanager.SetActivePauseMenuUI(true);
+
+
+            }
+            else
+            {
+                pause = false;
+                UImanager.SetActivePauseMenuUI(false);
+                //PauseMenuUI.SetActive(false);
+                SetTimeScale(1);
+            }
         }
-        else
+        else 
         {
-            SetTimeScale(1);
-            PauseMenuUI.SetActive(pause);
-            QuitMenuUI.SetActive(pause);
+            //QuitMenuUI.SetActive(false);
+            UImanager.SetActiveQuitMenuUI(false);
+            UImanager.SetActiveGameOverMenuUI(true);
         }
     }
 }
