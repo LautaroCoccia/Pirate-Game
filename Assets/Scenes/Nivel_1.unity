@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 67869203}
   - component: {fileID: 67869205}
   - component: {fileID: 67869204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 72031237}
   - component: {fileID: 72031239}
   - component: {fileID: 72031238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 82657300}
   - component: {fileID: 82657302}
   - component: {fileID: 82657301}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 87720151}
   - component: {fileID: 87720153}
   - component: {fileID: 87720152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 99672589}
   - component: {fileID: 99672591}
   - component: {fileID: 99672590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 134704753}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 165348190}
   - component: {fileID: 165348192}
   - component: {fileID: 165348191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -751,7 +751,7 @@ GameObject:
   - component: {fileID: 178796304}
   - component: {fileID: 178796306}
   - component: {fileID: 178796305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 183209090}
   - component: {fileID: 183209092}
   - component: {fileID: 183209091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +929,7 @@ GameObject:
   - component: {fileID: 216353723}
   - component: {fileID: 216353725}
   - component: {fileID: 216353724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1012,7 +1012,7 @@ GameObject:
   - component: {fileID: 252965020}
   - component: {fileID: 252965022}
   - component: {fileID: 252965021}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1093,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256407993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1126,7 +1126,7 @@ GameObject:
   - component: {fileID: 263746013}
   - component: {fileID: 263746015}
   - component: {fileID: 263746014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: 278224299}
   - component: {fileID: 278224301}
   - component: {fileID: 278224300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 286776543}
   - component: {fileID: 286776545}
   - component: {fileID: 286776544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1376,7 @@ GameObject:
   - component: {fileID: 288885315}
   - component: {fileID: 288885317}
   - component: {fileID: 288885316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,7 +1505,7 @@ GameObject:
   - component: {fileID: 330934958}
   - component: {fileID: 330934960}
   - component: {fileID: 330934959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1585,6 +1585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2522430442272344202, guid: a52fe184f3a03ff4cadd28ec30b957d7, type: 3}
+      propertyPath: playerPosRef
+      value: 
+      objectReference: {fileID: 1533399157}
     - target: {fileID: 2522430442272344243, guid: a52fe184f3a03ff4cadd28ec30b957d7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1655,7 +1659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 378931509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmerasAtras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,8 +1674,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378931508}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -18.081142, y: -6.9835525, z: 25.506365}
-  m_LocalScale: {x: 0.86812997, y: 0.86812985, z: 0.86812985}
+  m_LocalPosition: {x: -3.7611427, y: -0.5235524, z: 32.706364}
+  m_LocalScale: {x: 0.86812997, y: 0.86812973, z: 0.86812973}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 663023365}
@@ -1713,8 +1717,8 @@ Transform:
   - {fileID: 637476346}
   - {fileID: 1229215879}
   - {fileID: 278224299}
-  m_Father: {fileID: 1262819609}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &401522438
 GameObject:
@@ -1727,7 +1731,7 @@ GameObject:
   - component: {fileID: 401522439}
   - component: {fileID: 401522441}
   - component: {fileID: 401522440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,7 +1812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428452013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1830,6 +1834,100 @@ Transform:
   m_Father: {fileID: 1439877270}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &429077635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429077637}
+  - component: {fileID: 429077636}
+  m_Layer: 0
+  m_Name: CannonBallLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &429077636
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429077635}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.9871624, b: 0.8443396, a: 1}
+  m_Intensity: 0.35
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 129
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &429077637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429077635}
+  m_LocalRotation: {x: 0.70090926, y: 0, z: 0, w: 0.71325046}
+  m_LocalPosition: {x: 7.60531, y: 8.206865, z: -7.2215304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 89, y: 0, z: 0}
 --- !u!1 &434403222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,7 +1937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434403223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1984,7 +2082,7 @@ GameObject:
   - component: {fileID: 501856951}
   - component: {fileID: 501856953}
   - component: {fileID: 501856952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2166,7 @@ GameObject:
   - component: {fileID: 529424234}
   - component: {fileID: 529424236}
   - component: {fileID: 529424235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2150,7 +2248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 532507562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2183,7 +2281,7 @@ GameObject:
   - component: {fileID: 570840921}
   - component: {fileID: 570840923}
   - component: {fileID: 570840922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,7 +2365,7 @@ GameObject:
   - component: {fileID: 586376112}
   - component: {fileID: 586376114}
   - component: {fileID: 586376113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2348,7 +2446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 593193066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 627476775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2412,7 +2510,7 @@ GameObject:
   - component: {fileID: 637476346}
   - component: {fileID: 637476348}
   - component: {fileID: 637476347}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2496,7 +2594,7 @@ GameObject:
   - component: {fileID: 653458470}
   - component: {fileID: 653458472}
   - component: {fileID: 653458471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2579,7 +2677,7 @@ GameObject:
   - component: {fileID: 663023365}
   - component: {fileID: 663023367}
   - component: {fileID: 663023366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2663,7 +2761,7 @@ GameObject:
   - component: {fileID: 664921431}
   - component: {fileID: 664921433}
   - component: {fileID: 664921432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2745,7 +2843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678159247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2778,7 +2876,7 @@ GameObject:
   - component: {fileID: 705422376}
   - component: {fileID: 705422378}
   - component: {fileID: 705422377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2861,7 +2959,7 @@ GameObject:
   - component: {fileID: 711304410}
   - component: {fileID: 711304412}
   - component: {fileID: 711304411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2944,7 +3042,7 @@ GameObject:
   - component: {fileID: 717655476}
   - component: {fileID: 717655478}
   - component: {fileID: 717655477}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3027,7 +3125,7 @@ GameObject:
   - component: {fileID: 728696862}
   - component: {fileID: 728696864}
   - component: {fileID: 728696863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3111,7 +3209,7 @@ GameObject:
   - component: {fileID: 763183875}
   - component: {fileID: 763183877}
   - component: {fileID: 763183876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3195,7 +3293,7 @@ GameObject:
   - component: {fileID: 763976268}
   - component: {fileID: 763976270}
   - component: {fileID: 763976269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3276,7 +3374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 786535456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3309,7 +3407,7 @@ GameObject:
   - component: {fileID: 798578486}
   - component: {fileID: 798578488}
   - component: {fileID: 798578487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3324,7 +3422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798578485}
   m_LocalRotation: {x: 0.000000029802322, y: -0.00000011920929, z: 0.76438487, w: 0.6447603}
-  m_LocalPosition: {x: 0.33643147, y: 7.090049, z: 1.324918}
+  m_LocalPosition: {x: -0.96, y: 6.18, z: 1.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3390,7 +3488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 841058646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3423,7 +3521,7 @@ GameObject:
   - component: {fileID: 905382301}
   - component: {fileID: 905382303}
   - component: {fileID: 905382302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3504,7 +3602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 930677119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3535,7 +3633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 935509023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3566,7 +3664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 951209555}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3599,7 +3697,7 @@ GameObject:
   - component: {fileID: 961074160}
   - component: {fileID: 961074162}
   - component: {fileID: 961074161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3784,7 +3882,7 @@ GameObject:
   - component: {fileID: 973889238}
   - component: {fileID: 973889240}
   - component: {fileID: 973889239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3799,7 +3897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973889237}
   m_LocalRotation: {x: 0.000000029802322, y: -0.00000011920929, z: 0.76438487, w: 0.6447603}
-  m_LocalPosition: {x: 0.9389052, y: 11.01317, z: 1.3083136}
+  m_LocalPosition: {x: -4.87, y: 11.02, z: 1.3083136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3867,7 +3965,7 @@ GameObject:
   - component: {fileID: 990926712}
   - component: {fileID: 990926714}
   - component: {fileID: 990926713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3948,7 +4046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991640819}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3979,7 +4077,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 992683791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4012,7 +4110,7 @@ GameObject:
   - component: {fileID: 1012170569}
   - component: {fileID: 1012170571}
   - component: {fileID: 1012170570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4093,7 +4191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013068670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4124,7 +4222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1017400945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4157,7 +4255,7 @@ GameObject:
   - component: {fileID: 1017451834}
   - component: {fileID: 1017451833}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CannonBallManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4176,7 +4274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8049492916733991945, guid: 8db0f7ea91363aa4faf9dc086d76b776, type: 3}
-  timeToSpawn: 0.1
+  timeToSpawn: 0.92
   currentTime: 0
 --- !u!4 &1017451834
 Transform:
@@ -4204,7 +4302,7 @@ GameObject:
   - component: {fileID: 1041542089}
   - component: {fileID: 1041542091}
   - component: {fileID: 1041542090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4286,7 +4384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1042908125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4319,7 +4417,7 @@ GameObject:
   - component: {fileID: 1047237110}
   - component: {fileID: 1047237112}
   - component: {fileID: 1047237111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4399,6 +4497,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 590609483665769140, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a7fbad0c283838349ae8e2ab0f066362, type: 3}
+    - target: {fileID: 590609484068976215, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 590609484068976215, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 590609484195592609, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e4ea7e6bf2c1d414b8f5f671dd5e6bb9, type: 3}
+    - target: {fileID: 590609484211546903, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e4ea7e6bf2c1d414b8f5f671dd5e6bb9, type: 3}
     - target: {fileID: 2505746158395391632, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0.5
@@ -4419,7 +4537,63 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -253.125
       objectReference: {fileID: 0}
+    - target: {fileID: 4035335113367252338, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4035335113367252338, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493822140108918, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493822140108918, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493822140108918, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493822151329288, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493822151329288, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
     - target: {fileID: 4877493822210635201, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493822210635201, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493822210635201, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493822253060074, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493822253060074, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493823043964832, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493823043964832, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493823043964832, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
@@ -4432,6 +4606,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4877493823411924853, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493823411924853, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493823411924853, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823437065091, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493823437065091, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493823437065091, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
@@ -4439,6 +4633,102 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -412
       objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2043292608}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: Main
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823441127031, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823455681023, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823628316737, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 191895596}
+    - target: {fileID: 4877493823628316737, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823628316737, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823673015086, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 191895596}
+    - target: {fileID: 4877493823673015086, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823673015086, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823673015086, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823696238316, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2043292608}
+    - target: {fileID: 4877493823696238316, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823696238316, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493823824334344, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 4877493823824334344, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
+    - target: {fileID: 4877493823833838769, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877493824121397997, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e4ea7e6bf2c1d414b8f5f671dd5e6bb9, type: 3}
     - target: {fileID: 5491579961163711059, guid: 180a21abdcc50274b9d61753eeee6c03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -4654,7 +4944,7 @@ GameObject:
   - component: {fileID: 1082650233}
   - component: {fileID: 1082650235}
   - component: {fileID: 1082650234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4737,7 +5027,7 @@ GameObject:
   - component: {fileID: 1093274831}
   - component: {fileID: 1093274833}
   - component: {fileID: 1093274832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4820,7 +5110,7 @@ GameObject:
   - component: {fileID: 1116021799}
   - component: {fileID: 1116021801}
   - component: {fileID: 1116021800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4970,7 +5260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1168580655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5001,7 +5291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1175826807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmerasAdelante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5016,8 +5306,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175826806}
   m_LocalRotation: {x: -0.67390996, y: -0.21411546, z: -0.21411549, w: 0.67390984}
-  m_LocalPosition: {x: -3.2160625, y: -7.4759617, z: -1.3940351}
-  m_LocalScale: {x: 0.60225, y: 0.6022499, z: 0.60225}
+  m_LocalPosition: {x: 11.103937, y: -1.0159616, z: 5.8059645}
+  m_LocalScale: {x: 0.60225, y: 0.60224986, z: 0.60225}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 961074160}
@@ -5054,8 +5344,8 @@ Transform:
   - {fileID: 252965020}
   - {fileID: 798578486}
   - {fileID: 1683618630}
-  m_Father: {fileID: 1262819609}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178800497
 GameObject:
@@ -5068,7 +5358,7 @@ GameObject:
   - component: {fileID: 1178800498}
   - component: {fileID: 1178800500}
   - component: {fileID: 1178800499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5224,7 +5514,7 @@ GameObject:
   - component: {fileID: 1219527917}
   - component: {fileID: 1219527919}
   - component: {fileID: 1219527918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5306,7 +5596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1225411681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5339,7 +5629,7 @@ GameObject:
   - component: {fileID: 1229215879}
   - component: {fileID: 1229215881}
   - component: {fileID: 1229215880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5441,8 +5731,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1984052368}
-  - {fileID: 378931509}
-  - {fileID: 1175826807}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5457,7 +5745,7 @@ GameObject:
   - component: {fileID: 1266116768}
   - component: {fileID: 1266116770}
   - component: {fileID: 1266116769}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5539,7 +5827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1268505490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5572,7 +5860,7 @@ GameObject:
   - component: {fileID: 1299897686}
   - component: {fileID: 1299897688}
   - component: {fileID: 1299897687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5653,7 +5941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1305445572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5684,7 +5972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317209491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5717,7 +6005,7 @@ GameObject:
   - component: {fileID: 1320876124}
   - component: {fileID: 1320876126}
   - component: {fileID: 1320876125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5801,7 +6089,7 @@ GameObject:
   - component: {fileID: 1338909205}
   - component: {fileID: 1338909207}
   - component: {fileID: 1338909206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5884,7 +6172,7 @@ GameObject:
   - component: {fileID: 1403850924}
   - component: {fileID: 1403850926}
   - component: {fileID: 1403850925}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5967,7 +6255,7 @@ GameObject:
   - component: {fileID: 1439877270}
   - component: {fileID: 1439877272}
   - component: {fileID: 1439877271}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6049,7 +6337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1440132305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6082,7 +6370,7 @@ GameObject:
   - component: {fileID: 1440540412}
   - component: {fileID: 1440540414}
   - component: {fileID: 1440540413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6164,7 +6452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1471914292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6195,7 +6483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1487692334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6228,7 +6516,7 @@ GameObject:
   - component: {fileID: 1508533143}
   - component: {fileID: 1508533145}
   - component: {fileID: 1508533144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6310,7 +6598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1529655416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6332,6 +6620,11 @@ Transform:
   m_Father: {fileID: 728696862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1533399157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2522430442272344244, guid: a52fe184f3a03ff4cadd28ec30b957d7, type: 3}
+  m_PrefabInstance: {fileID: 359580605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1577616089
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,7 +6636,7 @@ GameObject:
   - component: {fileID: 1577616090}
   - component: {fileID: 1577616092}
   - component: {fileID: 1577616091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6425,7 +6718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1604376651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6458,7 +6751,7 @@ GameObject:
   - component: {fileID: 1620814455}
   - component: {fileID: 1620814457}
   - component: {fileID: 1620814456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6542,7 +6835,7 @@ GameObject:
   - component: {fileID: 1628022962}
   - component: {fileID: 1628022964}
   - component: {fileID: 1628022963}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6624,7 +6917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1630752488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6657,7 +6950,7 @@ GameObject:
   - component: {fileID: 1634311369}
   - component: {fileID: 1634311371}
   - component: {fileID: 1634311370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6741,7 +7034,7 @@ GameObject:
   - component: {fileID: 1658538333}
   - component: {fileID: 1658538335}
   - component: {fileID: 1658538334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6823,7 +7116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1669156059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6854,7 +7147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1674881767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6885,7 +7178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680241417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6918,7 +7211,7 @@ GameObject:
   - component: {fileID: 1683618630}
   - component: {fileID: 1683618632}
   - component: {fileID: 1683618631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7001,7 +7294,7 @@ GameObject:
   - component: {fileID: 1684434447}
   - component: {fileID: 1684434449}
   - component: {fileID: 1684434448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7119,7 +7412,7 @@ GameObject:
   - component: {fileID: 1715048951}
   - component: {fileID: 1715048953}
   - component: {fileID: 1715048952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7203,7 +7496,7 @@ GameObject:
   - component: {fileID: 1725045202}
   - component: {fileID: 1725045204}
   - component: {fileID: 1725045203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7286,7 +7579,7 @@ GameObject:
   - component: {fileID: 1758986135}
   - component: {fileID: 1758986137}
   - component: {fileID: 1758986136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7388,7 +7681,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.9058863, b: 0.6650944, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7398,8 +7691,8 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0
+    m_NormalBias: 0.2
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -7425,7 +7718,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 383
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -7464,7 +7757,7 @@ GameObject:
   - component: {fileID: 1812895990}
   - component: {fileID: 1812895992}
   - component: {fileID: 1812895991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7548,7 +7841,7 @@ GameObject:
   - component: {fileID: 1827102537}
   - component: {fileID: 1827102539}
   - component: {fileID: 1827102538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7697,7 +7990,7 @@ GameObject:
   - component: {fileID: 1842168197}
   - component: {fileID: 1842168199}
   - component: {fileID: 1842168198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7712,7 +8005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842168196}
   m_LocalRotation: {x: 0.00000008940697, y: -0.000000014901161, z: 0.19863686, w: 0.9800732}
-  m_LocalPosition: {x: -0.44495457, y: 8.713417, z: 0.8232137}
+  m_LocalPosition: {x: -3.48, y: 8.94, z: 0.8232137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7778,7 +8071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1866281981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7809,7 +8102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867578440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7840,7 +8133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894755321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7871,7 +8164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894893271}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7904,7 +8197,7 @@ GameObject:
   - component: {fileID: 1897888015}
   - component: {fileID: 1897888017}
   - component: {fileID: 1897888016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7988,7 +8281,7 @@ GameObject:
   - component: {fileID: 1903458789}
   - component: {fileID: 1903458791}
   - component: {fileID: 1903458790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8072,7 +8365,7 @@ GameObject:
   - component: {fileID: 1940388744}
   - component: {fileID: 1940388746}
   - component: {fileID: 1940388745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8155,7 +8448,7 @@ GameObject:
   - component: {fileID: 1968740024}
   - component: {fileID: 1968740026}
   - component: {fileID: 1968740025}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_Straight_Desktop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8237,7 +8530,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1970261540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8275,7 +8568,7 @@ GameObject:
   - component: {fileID: 2016971463}
   - component: {fileID: 2016971465}
   - component: {fileID: 2016971464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8404,7 +8697,7 @@ GameObject:
   - component: {fileID: 2031504360}
   - component: {fileID: 2031504362}
   - component: {fileID: 2031504361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_SBend_Desktop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8496,7 +8789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2047524825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8529,7 +8822,7 @@ GameObject:
   - component: {fileID: 2127619289}
   - component: {fileID: 2127619291}
   - component: {fileID: 2127619290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8612,7 +8905,7 @@ GameObject:
   - component: {fileID: 2140470072}
   - component: {fileID: 2140470074}
   - component: {fileID: 2140470073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PalmTree_LongLeavesBend_Desktop (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

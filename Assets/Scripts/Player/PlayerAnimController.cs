@@ -6,6 +6,7 @@ public class PlayerAnimController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private Transform characterMedium;
+    [SerializeField] private Transform playerPosRef;
     Vector3 initialPos;
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class PlayerAnimController : MonoBehaviour
         if (!isDigging)
         {
             anim.speed = 1;
-            characterMedium.localPosition = new Vector3( initialPos.x, -0.5f, initialPos.z);
+            characterMedium.position = new Vector3(playerPosRef.transform.position.x, 0f, playerPosRef.transform.position.z);
             characterMedium.localRotation = Quaternion.identity;
             
         }
