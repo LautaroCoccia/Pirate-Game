@@ -7,10 +7,9 @@ using System.Collections.Generic;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] int score = 0;
+    [SerializeField] float survivedTime = 0;
 
     [SerializeField] private TextMeshProUGUI UIScore;
-    [SerializeField] private TextMeshProUGUI UIHealth;
-    [SerializeField] private TextMeshProUGUI UIEnemies;
     [SerializeField] private TextMeshProUGUI UIExtras;
     [SerializeField] private UIManager UImanager;
 
@@ -33,6 +32,7 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        SetPlay();
     }
     private void OnEnable()
     {
@@ -46,10 +46,18 @@ public class LevelManager : MonoBehaviour
     }
     private void Update()
     {
+        if (Time.timeScale != 0)
+        {
+            survivedTime += Time.deltaTime;
+        }
         if (Input.GetKeyDown(KeyCode.Escape) )
         {
             SetPause();
         }
+    }
+    public void SetPlay()
+    {
+        Time.timeScale = 1;
     }
     public void UpdateScore(int SCORE)
     {
@@ -64,6 +72,8 @@ public class LevelManager : MonoBehaviour
     private void GameOver()
     {
         SetTimeScale(0);
+        UIExtras.text = ("Score: " + score + "\n" +
+                         "Time survived: " + survivedTime);
         //GameOverMenuUI.SetActive(true);
         UImanager.SetActiveGameOverMenuUI(true);
     }
