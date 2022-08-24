@@ -16,4 +16,4 @@ MonoBehaviour:
   name: Diamond
   score: 100
   effectRate: 50
-  spawnRate: 12
+  spawnRate: 10

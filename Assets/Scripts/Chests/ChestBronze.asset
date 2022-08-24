@@ -16,4 +16,4 @@ MonoBehaviour:
   name: Bronze
   score: 10
   effectRate: 5
-  spawnRate: 35
+  spawnRate: 30

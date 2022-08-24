@@ -16,4 +16,4 @@ MonoBehaviour:
   name: Special
   score: 1000
   effectRate: 75
-  spawnRate: 5
+  spawnRate: 10

@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77b70169258e6a44a06f0dab5f8b3e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemDuration: 30
+  itemDuration: 10
   digSpeedMultiplier: 2

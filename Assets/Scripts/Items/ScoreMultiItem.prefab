@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c72a93cb52afe4d8081bcd1c267a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemDuration: 30
+  itemDuration: 15
   scoreMultiplier: 2

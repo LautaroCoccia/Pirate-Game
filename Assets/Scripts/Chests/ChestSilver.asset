@@ -16,4 +16,4 @@ MonoBehaviour:
   name: Silver
   score: 30
   effectRate: 10
-  spawnRate: 28
+  spawnRate: 30
